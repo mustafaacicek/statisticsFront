@@ -1,0 +1,81 @@
+<div class="big-table   mat-elevation-z8 area">
+  <table mat-table [dataSource]="dataSource" class="mat-table" matSort>
+    <ng-container matColumnDef="iladi">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header > il adı</th>
+      <td mat-cell *matCellDef="let element">{{element['iladi']}}</td>
+    </ng-container>
+
+
+  <!-- sum2018 Column -->
+  <ng-container matColumnDef="sum2018">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2018 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2018']}} </td>
+  </ng-container>
+
+  <!-- sum2019 Column -->
+  <ng-container matColumnDef="sum2019">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2019 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2019']}} </td>
+  </ng-container>
+
+  <!-- sum2020 Column -->
+  <ng-container matColumnDef="sum2020">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2020 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2020']}} </td>
+  </ng-container>
+
+  <!-- sum2021 Column -->
+  <ng-container matColumnDef="sum2021">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2021 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2021']}} </td>
+  </ng-container>
+
+  <!-- sum2022 Column -->
+  <ng-container matColumnDef="sum2022">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2022 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2022']}} </td>
+  </ng-container>
+
+  <!-- sum2023 Column -->
+  <ng-container matColumnDef="sum2023">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2023 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2023']}} </td>
+  </ng-container>
+
+  <!-- sum2024 Column -->
+  <ng-container matColumnDef="sum2024">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> 2024 </th>
+    <td mat-cell *matCellDef="let element"> {{element['sum2024']}} </td>
+  </ng-container>
+
+  <!-- Toplam Sayi Column -->
+  <ng-container matColumnDef="toplamSayi">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Toplam Sayı </th>
+    <td mat-cell *matCellDef="let element"> {{element['toplamSayi']}} </td>
+  </ng-container>
+
+  <!-- Nüfus Column -->
+  <ng-container matColumnDef="nufus">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Nüfus </th>
+    <td mat-cell *matCellDef="let element"> {{element['nufus']}} </td>
+  </ng-container>
+
+  <!-- Satış Nüfus Oranı Yüzde Column -->
+  <ng-container matColumnDef="satisNufusOraniYuzde">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Satış Nüfus Oranı (%) </th>
+    <td mat-cell *matCellDef="let element"> {{element['satisNufusOraniYuzde'] | number:'1.2-2'}} </td>
+  </ng-container>
+
+  <!-- Header and Row Definitions -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <!-- Paginator -->
+  <!-- Paginator -->
+  <mat-paginator
+    [pageSizeOptions]="[5, 10]"
+    [pageSize]="10"
+    showFirstLastButtons>
+  </mat-paginator>
+</div>

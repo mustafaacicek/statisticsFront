@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  margin: 0; /* Varsayılan kenar boşluklarını sıfırlayın */
+}
+
+.chart-container {
+  width: 90%;
+  height: calc(90vh - 64px); /* Navbar yüksekliği ayarı */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Üstte hizalama */
+  padding: 20px;
+  background-color: #e6e6e6;
+  position: relative; /* Tam ekran butonu için pozisyon ayarı */
+  max-width: 800px; /* Başlangıçta küçük tutmak için maksimum genişlik */
+  max-height: 600px; /* Başlangıçta küçük tutmak için maksimum yükseklik */
+  margin: 20px auto; /* Üstten 20px boşluk ile ortala */
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 95%; /* Mobil genişlik */
+    height: calc(85vh - 56px); /* Mobil navbar yüksekliği ayarı */
+    padding: 10px;
+  }
+}
+
+canvas {
+  width: 100% !important; /* Tam genişlik */
+  height: auto !important; /* Yükseklik otomatik */
+  max-height: 100%; /* Maksimum yükseklik sınırlaması */
+}
+
+button {
+  position: absolute; /* Butonu grafiğin üstüne yerleştirmek için */
+  top: 10px; /* Üstten boşluk */
+  right: 10px; /* Sağdan boşluk */
+  z-index: 10; /* Diğer öğelerin üstünde görünmesi için */
+}

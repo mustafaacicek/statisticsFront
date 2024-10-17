@@ -1,0 +1,42 @@
+.chart-container {
+  width: 90%;
+  height: calc(90vh - 64px); /* Navbar yüksekliği 64px varsayılarak ayarlandı */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Gerekirse iç boşluk ekleyin */
+  background-color: #e6e6e6;
+  margin-left: 50px;
+}
+
+.area {
+  /* Gerekirse burada stil ekleyebilirsiniz */
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    width: 95%; /* Mobil için %95 genişlik */
+    height: calc(85vh - 56px); /* Mobilde navbar yüksekliği genellikle daha azdır, bunu ayarlayın */
+    padding: 10px; /* Mobil için daha az iç boşluk */
+  }
+}
+
+canvas {
+  max-width: 100% !important;
+  max-height: 580px;
+}
+
+mat-card {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+  margin: 20px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  mat-card {
+    margin: 10px 0;
+  }
+}

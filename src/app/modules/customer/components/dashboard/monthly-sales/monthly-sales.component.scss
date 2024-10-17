@@ -1,0 +1,57 @@
+canvas {
+  max-width: 100% !important;
+  max-height: 580px;
+  //width: auto !important;
+  //height: auto !important;
+}
+mat-card {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 30px;
+  margin: 20px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.area{
+  //margin-top: 80px !important  ;
+
+}
+.container-fluid {
+  margin: 20px;
+  background-color: #ececec;
+}
+
+#top-card {
+  height: calc(90vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#motorSalesChart {
+  width: 80%;
+  height: 80%;
+}
+
+
+
+//.clickable-card:hover {
+//  transform: scale(1);
+//}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  mat-card {
+    margin: 10px 0;
+  }
+}

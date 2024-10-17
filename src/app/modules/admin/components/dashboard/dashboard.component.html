@@ -1,0 +1,36 @@
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="card p-4" style="max-width: 400px; width: 100%;">
+    <h2 class="text-center">Excel Dosyası Yükle</h2>
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fileUpload">Excel Dosyasını Seçin:</label>
+        <input type="file" id="fileUpload" (change)="onFileChange($event)" accept=".xlsx, .xls" required class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block mt-3" [disabled]="!selectedFile">Yükle</button>
+    </form>
+
+    <div *ngIf="uploadStatus" class="mt-3 alert alert-info">
+      <p class="text-center mb-0">{{ uploadStatus }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+<!--<div style="align-content: center; width: 75%; margin: auto; max-height: 500px">-->
+<!--  <div style="text-align: center; margin-bottom: 20px;">-->
+<!--    <button class="custom-button" (click)="changeChartType('bar')">Bar Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('line')">Line Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('pie')">Pie Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('doughnut')">Doughnut Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('radar')">Radar Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('polarArea')">Polar Area Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('bubble')">Bubble Chart</button>-->
+<!--    <button class="custom-button" (click)="changeChartType('scatter')">Scatter Chart</button>-->
+<!--    <button class="custom-button" (click)="resetChart()">Reset Chart</button>-->
+<!--  </div>-->
+<!--  <canvas id="myChart"></canvas>-->
+<!--</div>-->

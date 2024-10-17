@@ -1,0 +1,78 @@
+.table-container {
+  width: 100%;
+  max-height: 670px; /* Dikey kaydırma için maksimum yükseklik */
+  overflow: auto; /* Kaydırmayı etkinleştirme */
+  position: relative; /* Sabit konumlandırma için */
+}
+.area{
+  //margin-top: 80px !important  ;
+
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10; /* Diğer hücrelerin üstünde kalması için */
+}
+
+.sticky-column {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 11; /* Diğer hücrelerin üstünde kalması için */
+}
+
+.table-container {
+  overflow-x: auto; /* Yatay kaydırma için */
+}
+
+.sticky-header.sticky-column {
+  z-index: 20;  /* Hem üstte hem de solda sabit olan hücre daha yüksek z-index ile ayarlanmalı */
+}
+
+table {
+
+  width: 100%;
+  border-collapse: collapse; /* Kenar çakışmalarını önlemek için */
+}
+
+th, td {
+  padding: 8px ;
+  text-align: center;
+  white-space: nowrap; /* Uzun metinlerin satır sarmasını önlemek için */
+}
+
+/* Üstteki başlık satırlarını sabitliyoruz */
+.sticky-header {
+  position: sticky;
+  top: 0; /* Üstteki satırın sabit kalacağı yer */
+  background-color: #f5f5f5; /* Başlık arka plan rengi */
+  z-index: 2; /* Başlık satırının diğerlerinin üzerinde kalmasını sağlar */
+}
+
+/* İlk kolon (İl) için sabitleme */
+.sticky-column {
+  position: sticky;
+  left: 0; /* İlk kolonun sabit kalacağı yer */
+  background-color: #fff; /* Arka plan rengi */
+  z-index: 1; /* İl kolonunu sabitliyoruz, diğerlerinden önde */
+  border-right: 1px solid #ddd; /* Ayırıcı çizgi */
+}
+
+/* Satır üzerine gelindiğinde arka plan rengi */
+.mat-row:hover td {
+  background-color: #e0e0e0; /* Satır üzerine gelindiğinde arka plan rengi */
+}
+
+
+.green{
+  background-color: #76e876 !important;
+
+}
+
+.blue{
+  background-color: #4c4cef !important;
+}
+.yellow{
+  background-color: #fafa5d !important;
+}

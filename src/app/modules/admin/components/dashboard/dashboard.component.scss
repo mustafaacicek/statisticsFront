@@ -1,0 +1,55 @@
+
+
+
+
+
+body {
+  background-color: #bcc8d5;
+}
+
+//.custom-button {
+//  width: 50px;
+//  margin-bottom: 20px; /* Butonlar arasında boşluk */
+//  padding: 10px; /* Buton içindeki metni sarmak için */
+//  font-size: 16px; /* Metin boyutu */
+//  border: none; /* Kenar çizgisi yok */
+//  border-radius: 5px; /* Köşe yuvarlama */
+//  cursor: pointer; /* Fare imlecini göster */
+//  transition: background-color 0.3s, color 0.3s; /* Geçiş animasyonu */
+//}
+//
+///* Farklı durumlar için stiller */
+//.custom-button:hover {
+//  background-color: #007bff; /* Hover durumunda arka plan rengi */
+//  color: white; /* Metin rengi */
+//}
+//
+//.custom-button:active {
+//  background-color: #0056b3; /* Tıklandığında arka plan rengi */
+//}
+//
+//.custom-button:focus {
+//  outline: none; /* Odaklanınca kenarlık yok */
+//}
+//.chart-container {
+//  width: 90%;
+//  height: calc(90vh - 64px); /* Navbar yüksekliği 64px varsayılarak ayarlandı */
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  padding: 20px; /* Gerekirse iç boşluk ekleyin */
+//}
+//
+//canvas {
+//  max-width: 100%;
+//  max-height: 100%;
+//  width: auto !important; /* Responsive olması için */
+//  height: auto !important; /* Responsive olması için */
+//}
+//@media (max-width: 768px) {
+//  .chart-container {
+//    width: 95%; /* Mobil için %95 genişlik */
+//    height: calc(85vh - 56px); /* Mobilde navbar yüksekliği genellikle daha azdır, bunu ayarlayın */
+//    padding: 10px; /* Mobil için daha az iç boşluk */
+//  }
+//}
